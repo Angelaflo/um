@@ -1,0 +1,46 @@
+# low note to high
+trans = 0
+use_synth :piano
+use_synth_defaults sustain: 0.25
+
+65.times do
+  play trans
+  sleep 0.25
+  trans = trans + 1
+end
+
+use_bpm 110
+
+3.times do
+  play :g3
+  sleep 0.5
+  play :g3
+  sleep 0.25
+  play :b3
+  sleep 0.5
+  play :b3
+  sleep 0.5
+  play :d3
+  sleep 0.75
+  play :c3
+  play :e3
+  sleep 1
+  play :b3
+  play :d3
+  sleep 1
+end
+
+2.times do
+  play :g3
+  sleep 0.5
+  play :g3
+  sleep 0.25
+  play :b3
+  sleep 0.5
+  play :b3
+  sleep 0.5
+  play :d3
+  sleep 0.75
+end
+
+
